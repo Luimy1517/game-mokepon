@@ -1,0 +1,260 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kalnia+Glaze:wght@100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kalnia+Glaze:wght@100..700&family=Orbitron:wght@400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+
+    /* font-family: "Source Code Pro", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+
+    font-family: "Kalnia Glaze", serif;
+    /* font-variation-settings:
+    "wdth" 100; */
+
+    /* font-family: "Orbitron", sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    /* background-image: url(/images/moke_balls.jpg); */
+    background-size: cover;
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#selecionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: rgb(0, 255, 0);
+    font-size: 80px;
+    /* font-family: "Comfortaa", sans-serif; */
+    /* font-family: "Orbitron", sans-serif; */
+    font-family: "Kalnia Glaze", serif;
+}
+
+.subtitulo {
+    color: yellow;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    /* .tarjetas, .tarjetas-ataques {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center; 
+        column-gap: 15px;
+        row-gap: 15px;
+      } */
+    margin-top: 2%;
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta-de-mokepon {
+    width: 210px;
+    height: 100px;
+    /* background: #f0fe71; */
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    /* border: 2px solid red; */
+    border: 5px ridge rgb(98, 218, 239);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 255, 0);
+}
+
+.tarjeta-de-mokepon img {
+    width: 80px;
+}
+
+#boton-mascota {
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    /* font-family: "Source Code Pro", system-ui; */
+    font-family: "Kalnia Glaze", serif;
+    /* font-family: "Source Code Pro", system-ui; */
+    /* border: 1px solid rgb(235, 97, 11); */
+    border: 5px ridge rgb(98, 218, 239);
+    color: yellow;
+    margin-top: 80px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background-color: #cc5959;
+}
+
+#selecionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: transparent;
+    color: aqua;
+    border-radius: 20px;
+    border: 3px ridge rgb(98, 218, 239);
+    width: 80px;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    /* font-family: "Orbitron", sans-serif; */
+    font-family: "Kalnia Glaze", serif;
+
+}
+
+#mensajes {
+    width: 260px;
+    background: transparent;
+    color: rgb(0, 255, 0);
+    padding: 20px;
+    margin-top: 0px;
+    border: 3px ridge rgb(98, 218, 239);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: "Orbitron", sans-serif; */
+    font-family: "Kalnia Glaze", serif;
+
+}
+
+#boton-reiniciar {
+    background: transparent;
+    border: transparent;
+    color: yellow;
+    /* font-family: "Orbitron", sans-serif; */
+    font-family: "Kalnia Glaze", serif;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    text-align: center;
+    margin: 20px;
+}
+
+#victorias-jugador {
+    font-size: 30px;
+    margin-top: 0;
+    margin-inline-end: 100%;
+    color: rgb(0, 255, 0);
+}
+
+#victorias-enemigo {
+    font-size: 30px;
+    margin-top: 0;
+    margin-inline-start: 100%;
+    color: rgb(0, 255, 0);
+}
+
+#empates {
+    font-size: 24px;
+    margin-bottom: -25px;
+    color: rgb(0, 255, 0);
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mascota-jugador {
+    font-size: 20px;
+    margin-top: 0;
+    margin-inline-end: 100%;
+    color: rgb(0, 255, 0);
+}
+
+#mascota-enemigo {
+    font-size: 20px;
+    margin-top: 0;
+    margin-inline-start: 100%;
+    color: rgb(0, 255, 0);
+}
+
+#ataques-del-jugador {
+    padding: 20px;
+    border: 3px ridge rgb(98, 218, 239);
+    border-radius: 20px;
+    margin-inline-end: 100%;
+    color: aqua;
+}
+
+#ataques-del-enemigo {
+    padding: 20px;
+    border: 3px ridge rgb(98, 218, 239);
+    border-radius: 20px;
+    margin-inline-start: 100%;
+    color: aqua;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    /* font-family: "Source Code Pro", system-ui; */
+    font-family: "Kalnia Glaze", serif;
+    /* font-family: "Source Code Pro", system-ui; */
+    /* border: 1px solid rgb(235, 97, 11); */
+    border: 5px ridge rgb(98, 218, 239);
+    color: yellow;
+    margin: 3px 0;
+}
+
+/* #mapa {
+    border: 2px solid white;
+} */
+
+@media (max-width: 1400px) {
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    #ver-mapa div {
+        display: "flex";
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/* https://raw.githubusercontent.com/platzi/curso-programacion-basica/483dae8c3c7b50bf4fcc872b9b2ac1f940307b1d/programar/mokepon/assets/mokepons_mokepon_capipepo_attack.png */
+/* https://raw.githubusercontent.com/platzi/curso-programacion-basica/483dae8c3c7b50bf4fcc872b9b2ac1f940307b1d/programar/mokepon/assets/mokepons_mokepon_hipodoge_attack.png */
+/* https://raw.githubusercontent.com/platzi/curso-programacion-basica/483dae8c3c7b50bf4fcc872b9b2ac1f940307b1d/programar/mokepon/assets/mokepons_mokepon_ratigueya_attack.png */
